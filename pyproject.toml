@@ -1,0 +1,16 @@
+[project]
+name = "tg-harness"
+version = "0.1.0"
+description = "Telegram bot that drives Claude Code"
+requires-python = ">=3.11"
+dependencies = [
+    "faster-whisper",
+    "av<14",  # faster-whisper calls av.open(metadata_errors=...), removed in PyAV 14
+]
+
+[dependency-groups]
+dev = ["pytest"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src", "tests"]
+testpaths = ["tests"]

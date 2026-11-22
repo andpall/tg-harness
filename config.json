@@ -1,0 +1,12 @@
+{
+  "whisper_model": "medium",
+  "permission_mode": "acceptEdits",
+  "allowed_tools": [],
+  "claude_args": [],
+  "providers": {
+    "anthropic": {
+      "env": {},
+      "models": ["sonnet", "opus", "haiku"]
+    }
+  }
+}

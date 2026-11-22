@@ -1,0 +1,6 @@
+.env
+bot.log
+sessions.json
+sessions.tmp
+__pycache__/
+.pytest_cache/
